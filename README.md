@@ -1,3 +1,3 @@
 # Personal Website
 
-Currently underconstruction, forked from Varad Bhogayata. Thanks for the template!
+Currently under construction, forked from Varad Bhogayata. Thanks for the template!
