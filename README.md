@@ -15,12 +15,7 @@ To do:
 [![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
 
 ### Website Preview
-<p align="center"> 
-  <kbd>
-    <a href="https://ericcblow.github.io" target="_blank"><img src="/examples/preview.jpg">
-  </a>
-  </kbd>
-</p>
+[![Website Preview](https://github.com/ericcblow/ericcblow.github.io/blob/main/examples/preview.jpg?raw=true)](https://ericcblow.github.io)
 
 
 ## Sections 📚
