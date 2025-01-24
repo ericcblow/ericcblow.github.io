@@ -17,7 +17,7 @@ To do:
 ### Website Preview
 <p align="center"> 
   <kbd>
-    <a href="https://daviddelriod.github.io" target="_blank"><img src="examples/preview.jpg">
+    <a href="https://ericcblow.github.io" target="_blank"><img src="examples/preview.jpg">
   </a>
   </kbd>
 </p>
