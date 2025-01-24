@@ -1,9 +1,9 @@
 # Personal Website
 
-Currently under construction, forked from Varad Bhogayata. Thanks for the template!
+Currently under construction.
 
 To do: 
-- Tabs: About me, Experience, Education, Publications, Projects, Climbing, Contact me
+-  Publications, Projects, Climbing
 
 > https://ericcblow.github.io
 
