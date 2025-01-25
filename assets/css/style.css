@@ -223,6 +223,12 @@ dt {
   margin-left: 0.5rem;
 }
 
+ul {
+  list-style-type: disc;
+  margin-left: 1.5em; /* Adjust indentation */
+  padding-left: 1.5em;
+}
+
 ul.side-nav {
   width: 190px;
 }
