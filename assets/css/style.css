@@ -28,6 +28,18 @@
   right: 0;
 }
 
+/* By default, hide the image */
+.mobile-headshot {
+  display: none;
+}
+
+/* Show the image only on mobile (or small screen) */
+@media (max-width: 768px) {
+  .mobile-headshot {
+    display: block;
+  }
+}
+
 @import url(https://fonts.googleapis.com/css?family=Poiret+One);
 .social {
   margin: 0 auto;
