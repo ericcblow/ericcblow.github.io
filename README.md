@@ -3,7 +3,7 @@
 Currently under construction.
 
 To do: 
--  Publications, Projects, Climbing
+-  Improve Readibility of Publications, Climbing
 
 > https://ericcblow.github.io
 
@@ -14,6 +14,16 @@ To do:
 [![Ask Me Anything !](https://img.shields.io/badge/ask%20me-linkedin-1abc9c.svg)](https://www.linkedin.com/in/ericcblow/)
 [![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
 
+## Sections 📚
+✔️ About me \
+✔️ Experience \
+✔️ Education \
+✔️ Publications \
+✔️ Projects \
+✔️ Climbing \
+✔️ Contact Info \
+✔️ Resume
+
 ### Website Preview
 <p align="center"> 
   <kbd>
@@ -23,12 +33,10 @@ To do:
 </p>
 
 
-## Sections 📚
-✔️ About me \
-✔️ Experience \
-✔️ Education \
-✔️ Publications \
-✔️ Projects \
-✔️ Climb \
-✔️ Contact Info \
-✔️ Resume
+### Website Mobile Preview
+<p align="center"> 
+  <kbd>
+    <a href="https://ericcblow.github.io" target="_blank"><img src="/examples/mobile_preview.jpg">
+  </a>
+  </kbd>
+</p>
