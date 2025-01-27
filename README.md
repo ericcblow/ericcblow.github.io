@@ -20,6 +20,7 @@ To do:
 ✔️ Education \
 ✔️ Publications \
 ✔️ Projects \
+✔️ Software Skills \
 ✔️ Climbing \
 ✔️ Contact Info \
 ✔️ Resume
@@ -36,7 +37,8 @@ To do:
 ### Website Mobile Preview
 <p align="center"> 
   <kbd>
-    <a href="https://ericcblow.github.io" target="_blank"><img src="/examples/mobile_preview.jpg">
-  </a>
+    <a href="https://ericcblow.github.io" target="_blank">
+      <img src="/examples/mobile_preview.jpg" style="width:350px;">
+    </a>
   </kbd>
 </p>
