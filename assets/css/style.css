@@ -721,7 +721,7 @@ small {
   }
 
   .fade {
-    animation: fade 1.5s ease-in-out;
+    animation: fade 0.2s ease-in-out;
   }
 
   @keyframes fade {
