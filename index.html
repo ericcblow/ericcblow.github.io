@@ -283,10 +283,10 @@
           Optional text         
         </p> -->
         <p>
-         Open to academic and industrial collaborations within the following integrated photonic application spaces: Neuromorphic Photonics, AI Accelerators, Analog Compute, Microwave Photonics. 
+         Currently open to academic and industrial collaborations within the following integrated photonic application spaces: Neuromorphic Photonics, AI Accelerators, Analog Compute, Microwave Photonics. 
         </p>
 
-        <p> Outside of work, I love playing recreational sports: basketball, soccer, and softball. Or exploring the outdoors: rock climbing, hiking, and caynoneering. I have climbed all over the country as well as internationally.  </p>
+        <p> Outside of work, I love playing recreational sports: basketball, soccer, and softball. Exploring the outdoors: rock climbing, hiking, and caynoneering.  </p>
         <!-- <p>
           Another Paragraph
         </p>  -->
@@ -911,6 +911,7 @@
       </div>
     </section>
 
+
     <!-- Eighth Section: Climbing -->
     <section id="climbing" class="section scrollspy">
       <h3 class="page-title white-text teal">Climbing (Under Construction)</h3>
@@ -938,6 +939,41 @@
               <li><b>Notes:</b> First trip, First Climbing Thanksgiving, interesting first lead...</li>
             </ul>
           </div>
+
+          <!-- Slideshow -->
+          <div class="slideshow-container">
+            <!-- Slide 1 -->
+            <div class="mySlides fade">
+              <img src="/assets/img/2020NRG1.jpg" class="responsive-img" style="width:100%">
+              <div class="text">Summerville Lake</div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="mySlides fade">
+              <img src="/assets/img/2020NRG2.jpg" class="responsive-img" style="width:100%">
+              <div class="text">Endless Wall</div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="mySlides fade">
+              <img src="/assets/img/2020NRG3.jpg" class="responsive-img" style="width:100%">
+              <div class="text">Whippoorwill</div>
+            </div>
+
+            <!-- Next and Previous Buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+          <br>
+
+          <!-- Dots/Indicators -->
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+          </div>
+        </div>
+    
           <div class="card-action">
             <span>November 2020 | Glen Jean, West Virginia </span>
           </div>
@@ -1304,6 +1340,36 @@
         closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
       })
     })
+  </script>
+
+    <!-- Slideshow Script -->
+  <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) { slideIndex = 1 }
+      if (n < 1) { slideIndex = slides.length }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+    }
   </script>
 </body>
 
