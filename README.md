@@ -3,7 +3,7 @@
 Currently under construction.
 
 To do: 
--  Improve Readibility of Publications, Climbing
+-  All sections are at least roughly complete, will improve formatting, readability, and include more pictures. 
 
 > https://ericcblow.github.io
 
