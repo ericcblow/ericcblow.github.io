@@ -709,85 +709,73 @@ small {
     background-position-x: 30%;
   }
 }
+.slideshow-container {
+  position: relative;
+  max-width: 100%;
+  margin: auto;
+}
 
-  /* Center the entire slideshow */
-  .slideshow-container {
-    position: relative;
-    max-width: 800px; /* Fixed width for consistent slideshow size */
-    margin: auto;
-    overflow: hidden; /* Prevent images from overflowing */
-  }
+.mySlides {
+  display: none;
+}
 
-  /* Ensure images are consistent sizes */
-  .slide-image img {
-    width: 100%; /* Scale images to fill the slideshow container */
-    height: auto; /* Maintain aspect ratio */
-    display: block;
-  }
+.fade {
+  animation: fade 0.2s ease-in-out;
+}
 
-  /* Text overlay on slides */
-  .text {
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    color: white;
-    font-size: 16px;
-    background-color: rgba(0, 0, 0, 0.5); /* Add semi-transparent background */
-    padding: 8px 12px;
-    border-radius: 4px;
-    z-index: 10;
+@keyframes fade {
+  from {
+    opacity: 0.4;
   }
+  to {
+    opacity: 1;
+  }
+}
 
-  /* Navigation buttons */
-  .prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    padding: 16px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    user-select: none;
-    border-radius: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-  }
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
 
-  .prev {
-    left: 10px;
-  }
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  user-select: none;
+  border-radius: 0 3px 3px 0;
+}
 
-  .next {
-    right: 10px;
-  }
+.prev {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
 
-  /* Dots (indicators) */
-  .dot {
-    height: 15px;
-    width: 15px;
-    margin: 5px 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-  }
+.next {
+  right: 0;
+  border-radius: 0 3px 3px 0;
+}
 
-  .dot.active {
-    background-color: #717171;
-  }
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
 
-  /* Fade animation for slides */
-  .fade {
-    animation: fade 1.5s ease-in-out;
-  }
-
-  @keyframes fade {
-    from {
-      opacity: 0.4;
-    }
-    to {
-      opacity: 1;
-    }
-  }
+.dot.active {
+  background-color: #717171;
+}
