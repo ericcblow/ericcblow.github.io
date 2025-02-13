@@ -133,6 +133,25 @@
   -webkit-border-radius: 5px;
 }
 
+@media screen and (max-width: 768px) { 
+  .buttons {
+    display: flex;
+    flex-direction: column; /* Stack buttons vertically */
+    align-items: center; /* Center the buttons */
+    gap: 10px; /* Reduce spacing */
+    margin-top: 15px; /* Adjust to move buttons up */
+  }
+
+  .readme,
+  .contactme {
+    width: 80%; /* Make buttons wider on small screens */
+    text-align: center;
+    padding: 10px 20px; /* Reduce padding for better fit */
+    font-size: 14px; /* Slightly smaller font */
+    margin-top: 5px; /* Reduce extra spacing */
+  }
+}
+
 .contactme:hover{
   color: #00796b;
   background-color: white;
