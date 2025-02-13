@@ -601,8 +601,7 @@
             <li>J. C. Lederman, Y. Jimoh, W. Zhang, T. Ferreira de Lima, E. C. Blow, S. Bilodeau, B. J. Shastri, P. R. Prucnal, <b>A Multi-Layer Topologically Reconfigurable Broadcast-and-Weight Photonic Neural Network</b>, IPC 2023</li>
             <li>T. F. de Lima, J. C. Lederman, W. Zhang, J. Hu, E. C. Blow, K. Asahi, Y. Aono, T. Wang, and P. R. Prucnal, <b>Real-Time Blind Source Separation with Integrated Photonics for Wireless Signals</b>, in CLEO 2023</li>
             <li>E. C. Blow et. Al., <b>Link Loss Analysis of Integrated Linear Weight Bank within Silicon Photonic Neural Network</b>, SPIE Europe 2024</li>
-          </ol>
-    
+          </ol> 
         </div>
         
         <div id="patents" style="display: none;">
@@ -617,10 +616,11 @@
           <ol>
             <li>M. P. Chang, J. Sun, E. C. Blow, M. Lu, and P. R. Prucnal, <b>Sensors for Everyday Life, Chapter 10: Optical-Based Interference Cancellation in Wireless Sensor Networks</b> Volume 23 of the series Smart Sensors, Measurement and Instrumentation pp 273-301, 2016</li>
             <li>E. C. Blow, P. R. Prucnal, <b>In-Band Full-Duplex Technologies and Applications, Chapter: IBFD Optical Systems</b> Artech House 2021</li>
-          </ol>    
+          </ol>      
         </div>
       </div>
     </section>
+
 
 
 
@@ -1438,10 +1438,19 @@
   <!-- Button Script - Publications -->
   <script>
     function toggleSection(id, button) {
-      var section = document.getElementById(id);
-      var isHidden = section.style.display === "none";
-      section.style.display = isHidden ? "block" : "none";
-      button.style.backgroundColor = isHidden ? "#ccc" : "";
+      var sections = ['highlighted-publications', 'additional-publications', 'patents', 'book-chapters'];
+      sections.forEach(sectionId => {
+        var section = document.getElementById(sectionId);
+        var btn = document.getElementById('btn-' + sectionId);
+        if (sectionId === id) {
+          var isHidden = section.style.display === "none";
+          section.style.display = isHidden ? "block" : "none";
+          button.style.backgroundColor = isHidden ? "#ccc" : "";
+        } else {
+          section.style.display = "none";
+          btn.style.backgroundColor = "";
+        }
+      });
     }
   </script>
 
