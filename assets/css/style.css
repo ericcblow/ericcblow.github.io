@@ -100,7 +100,7 @@
 .readme {
   position: relative;
   padding: 11px 35px;
-  z-index: 1;
+  z-index: -1;
   background: #fff;
   color: #00796b;
   border: 2px solid #fff;
@@ -119,7 +119,7 @@
 
 .contactme {
   position: relative;
-  z-index: 1;
+  z-index: -1;
   padding: 11px 35px;
   background: none;
   color: #fff;
