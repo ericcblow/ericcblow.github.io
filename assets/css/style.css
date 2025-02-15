@@ -713,7 +713,8 @@ small {
     background-position-x: 30%;
   }
 }
-.slideshow-container {
+
+ow-container {
   position: relative;
   max-width: 100%;
   margin: auto;
@@ -721,6 +722,34 @@ small {
 
 .mySlides {
   display: none;
+}
+
+.mySlides img {
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+
+.dots-container {
+  text-align: center;
+  margin-top: -20px;
+  position: relative;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.dot.active {
+  background-color: #717171;
 }
 
 .fade {
@@ -755,31 +784,30 @@ small {
   margin-top: -22px;
   color: white;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 24px;
   user-select: none;
-  border-radius: 0 3px 3px 0;
+  background: rgba(0, 0, 0, 0.5); /* Adds contrast */
+  border-radius: 5px;
+  transition: 0.3s ease-in-out;
 }
 
 .prev {
-  left: 0;
-  border-radius: 3px 0 0 3px;
+  left: 10px; /* Move slightly inward */
 }
 
 .next {
-  right: 0;
-  border-radius: 0 3px 3px 0;
+  right: 10px;
 }
 
-.dot {
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
+.prev:hover, .next:hover {
+  background: rgba(0, 0, 0, 0.8);
+  transform: scale(1.2);
 }
 
-.dot.active {
-  background-color: #717171;
+@media screen and (max-width: 600px) {
+  .prev, .next {
+    font-size: 20px;
+    padding: 12px;
+  }
 }
+
