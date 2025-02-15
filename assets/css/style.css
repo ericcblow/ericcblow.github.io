@@ -740,7 +740,7 @@ ow-container {
 
 .dots-container {
   margin-top: 40px !important; /* Pushes dots further down */
-  margin-bottom: 50px !important; /* Creates space below */
+  margin-bottom: 100px !important; /* Creates space below */
 }
 
 .dot {
