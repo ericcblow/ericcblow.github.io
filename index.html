@@ -551,52 +551,53 @@
     <section id="publications" class="section scrollspy">
       <h3 class="page-title white-text teal">Publications</h3>
       <div class="container flow-text" style="font-size: 16px;">
+        
+        <!-- Slideshow -->
+        <div class="slideshow-container">
+
+          <!-- Example code
+          <div class="mySlides fade">
+            <img src="/assets/img/publication_img/" class="responsive-img" style="width:100%">
+            <div class="text"> test image</div>
+          </div>-->
+
+          <div class="mySlides fade">
+            <img src="/assets/img/publication_img/1s_SiWeights.png" class="responsive-img" style="width:100%">
+            <div class="text"> test image</div>
+          </div>
+          
+          <div class="mySlides fade">
+            <img src="/assets/img/publication_img/2s_HHI.png" class="responsive-img" style="width:100%">
+            <div class="text"> test image</div>
+          </div>
+          
+          <div class="mySlides fade">
+            <img src="/assets/img/publication_img/3s_Hybrid.png" class="responsive-img" style="width:100%">
+            <div class="text"> test image</div>
+          </div>
+
+          <!--Next and Previous Buttons -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
+        <!--Dots/Indicators -->
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+        </div>        
+        
+        
         <div style="display: flex; justify-content: center; margin-top: 20px;">
           <a href="https://scholar.google.com/citations?user=icvwMmMAAAAJ&hl=en&oi=ao" target="_blank">
             <button class="icon-btn scholar">
               <i class="fa fa-google"></i>
             </button>
           </a>
-        </div>
-
-         
-            <!-- Slideshow -->
-            <div class="slideshow-container">
-
-              <!-- Example code
-              <div class="mySlides fade">
-                <img src="/assets/img/publication_img/" class="responsive-img" style="width:100%">
-                <div class="text"> test image</div>
-              </div>-->
-              <div class="mySlides fade">
-                <img src="/assets/img/publication_img/1s_SiWeights.png" class="responsive-img" style="width:100%">
-                <div class="text"> test image</div>
-              </div>
-              
-              <div class="mySlides fade">
-                <img src="/assets/img/publication_img/2s_HHI.png" class="responsive-img" style="width:100%">
-                <div class="text"> test image</div>
-              </div>
-              
-              <div class="mySlides fade">
-                <img src="/assets/img/publication_img/3s_Hybrid.png" class="responsive-img" style="width:100%">
-                <div class="text"> test image</div>
-              </div>
-
-              <!--Next and Previous Buttons -->
-              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-              <a class="next" onclick="plusSlides(1)">&#10095;</a>
-            </div>
-            <br>
-
-            <!--Dots/Indicators -->
-            <div style="text-align:center">
-              <span class="dot" onclick="currentSlide(1)"></span>
-              <span class="dot" onclick="currentSlide(2)"></span>
-              <span class="dot" onclick="currentSlide(3)"></span>
-            </div>
-          </div>
-          
+        </div>           
         
         <div style="display: flex; flex-direction: column; gap: 10px;">
           <button id="btn-highlighted-publications" onclick="toggleSection('highlighted-publications', this)">Highlighted Publications</button>
