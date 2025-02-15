@@ -741,7 +741,7 @@ ow-container {
 .dots-container {
   text-align: center;
   margin-top: 20px; /* Push dots down if needed */
-  margin-bottom: 40px; /* Adds space below dots */
+  margin-bottom: 100px; /* Adds space below dots */
   position: relative;
 }
 
@@ -777,7 +777,7 @@ ow-container {
   font-size: 16px; /* Slightly larger text */
   padding: 10px 15px;
   position: absolute;
-  bottom: 20%; /* Moves text higher */
+  bottom: 0%; /* Moves text higher */
   left: 50%;
   transform: translateX(-50%); /* Centers text */
   width: 80%; /* Avoids text touching the edges */
