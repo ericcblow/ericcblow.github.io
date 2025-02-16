@@ -738,13 +738,13 @@ ow-container {
 
 .dots-container {
   text-align: center;
-  margin-top: -30px;
+  margin-top: -20px;
   position: relative;
 }
 
 .dots-container {
   margin-top: 40px !important; /* Pushes dots further down */
-  margin-bottom: 300px !important; /* Creates space below */
+  margin-bottom: 175px !important; /* Creates space below */
 }
 
 .dot {
@@ -782,7 +782,7 @@ ow-container {
   bottom: -50px; /* Moves text higher */
   left: 50%;
   transform: translateX(-50%); /* Centers text */
-  width: 80%; /* Avoids text touching the edges */
+  width: 60%; /* Avoids text touching the edges */
   text-align: center;
   background: rgba(0, 0, 0, 0.6); /* Dark transparent background */
   border-radius: 8px; /* Soft edges */
