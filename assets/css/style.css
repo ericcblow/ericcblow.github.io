@@ -721,7 +721,7 @@ ow-container {
 }
 
 .slideshow-container {
-  min-height: 500px; /* Adjust this based on your layout */
+  min-height: 400px; /* Adjust this based on your layout */
 }
 
 .mySlides {
@@ -779,7 +779,7 @@ ow-container {
   font-size: 16px; /* Slightly larger text */
   padding: 10px 15px;
   position: absolute;
-  bottom: 0px; /* Moves text higher */
+  bottom: -100px; /* Moves text higher */
   left: 50%;
   transform: translateX(-50%); /* Centers text */
   width: 60%; /* Avoids text touching the edges */
