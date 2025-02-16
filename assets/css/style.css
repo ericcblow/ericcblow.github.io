@@ -778,7 +778,7 @@ ow-container {
   color: #fff; /* Keep it white for readability */
   font-size: 16px; /* Slightly larger text */
   padding: 10px 15px;
-  position: absolute;
+  position: relative;
   bottom: 50px; /* Moves text higher */
   left: 50%;
   transform: translateX(-50%); /* Centers text */
