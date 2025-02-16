@@ -743,7 +743,7 @@ ow-container {
 }
 
 .dots-container {
-  margin-top: 0px !important; /* Pushes dots further down */
+  margin-top: -40px !important; /* Pushes dots further down */
   margin-bottom: 175px !important; /* Creates space below */
 }
 
@@ -779,7 +779,7 @@ ow-container {
   font-size: 16px; /* Slightly larger text */
   padding: 10px 15px;
   position: absolute;
-  bottom: 150px; /* Moves text higher */
+  bottom: 50px; /* Moves text higher */
   left: 50%;
   transform: translateX(-50%); /* Centers text */
   width: 60%; /* Avoids text touching the edges */
