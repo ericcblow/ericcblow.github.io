@@ -765,7 +765,7 @@ ow-container {
   left: 50%;
   transform: translate(-50%, 50%); /* Moves it down by 50% of its own height */
   width: 60%;
-  height: 50%; /* Reduce the height to half */
+  height: -50%; /* Reduce the height to half */
   text-align: center;
   background: rgba(0, 0, 0, 0.6);
   border-radius: 8px;
