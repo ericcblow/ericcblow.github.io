@@ -756,15 +756,14 @@ ow-container {
   background-color: #717171;
 }
 
-/* Adjust text box positioning */
 .text {
   color: #fff;
   font-size: 16px;
   padding: 10px 15px;
   position: absolute;
-  bottom: 15%; /* Adjusted to prevent overlap */
+  bottom: 5%; /* Reduced from 15% to move it lower */
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%, 50%); /* Moves it down by 50% of its own height */
   width: 60%;
   text-align: center;
   background: rgba(0, 0, 0, 0.6);
