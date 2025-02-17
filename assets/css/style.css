@@ -753,11 +753,11 @@ ow-container {
 }
 
 .dot.active {
-  background-color: #717171;
+  background-color: rgba(255, 255, 255, 0.534);
 }
 
 .text {
-  color: #fff;
+  color: #000000;
   font-size: 16px;
   padding: 10px 15px;
   position: absolute;
@@ -770,7 +770,7 @@ ow-container {
   align-items: center;
   justify-content: center;
   text-align: center;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(255, 255, 255, 0.534);
   border-radius: 8px;
 }
 
@@ -815,7 +815,7 @@ ow-container {
 /* Media query for mobile adjustments */
 @media screen and (max-width: 600px) {
   .text {
-    bottom: 10%; /* Slightly lower for smaller screens */
+    bottom: -5%; /* Slightly lower for smaller screens */
     font-size: 14px;
     width: 75%;
   }
