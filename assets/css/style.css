@@ -720,14 +720,13 @@ ow-container {
   margin: auto;
 }
 
+
 .slideshow-container {
-  min-height: 325px; /* Adjust this based on your layout */
+  min-height: 325px; /* Keeps slideshow height consistent */
+  position: relative;
 }
 
-.mySlides {
-  display: none;
-}
-
+/* Ensures images scale properly */
 .mySlides img {
   max-width: 400px;
   width: 100%;
@@ -736,15 +735,11 @@ ow-container {
   margin: auto;
 }
 
+/* Centers and properly spaces dots */
 .dots-container {
   text-align: center;
-  margin-top: -20px;
   position: relative;
-}
-
-.dots-container {
-  margin-top: -40px !important; /* Pushes dots further down */
-  margin-bottom: 175px !important; /* Creates space below */
+  margin-top: -20px; 
 }
 
 .dot {
@@ -761,33 +756,22 @@ ow-container {
   background-color: #717171;
 }
 
-.fade {
-  animation: fade 0.2s ease-in-out;
-}
-
-@keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
+/* Adjust text box positioning */
 .text {
-  color: #fff; /* Keep it white for readability */
-  font-size: 16px; /* Slightly larger text */
+  color: #fff;
+  font-size: 16px;
   padding: 10px 15px;
   position: absolute;
-  bottom: 25px; /* Moves text higher */
+  bottom: 15%; /* Adjusted to prevent overlap */
   left: 50%;
-  transform: translateX(-50%); /* Centers text */
-  width: 60%; /* Avoids text touching the edges */
+  transform: translateX(-50%);
+  width: 60%;
   text-align: center;
-  background: rgba(0, 0, 0, 0.6); /* Dark transparent background */
-  border-radius: 8px; /* Soft edges */
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 8px;
 }
 
+/* Navigation buttons */
 .prev, .next {
   cursor: pointer;
   position: absolute;
@@ -799,13 +783,13 @@ ow-container {
   font-weight: bold;
   font-size: 24px;
   user-select: none;
-  background: rgba(0, 0, 0, 0.5); /* Adds contrast */
+  background: rgba(0, 0, 0, 0.5);
   border-radius: 5px;
   transition: 0.3s ease-in-out;
 }
 
 .prev {
-  left: 10px; /* Move slightly inward */
+  left: 10px;
 }
 
 .next {
@@ -817,10 +801,29 @@ ow-container {
   transform: scale(1.2);
 }
 
+/* Button container */
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+/* Media query for mobile adjustments */
 @media screen and (max-width: 600px) {
+  .text {
+    bottom: 10%; /* Slightly lower for smaller screens */
+    font-size: 14px;
+    width: 75%;
+  }
+
   .prev, .next {
     font-size: 20px;
     padding: 12px;
   }
-}
 
+  .button-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
