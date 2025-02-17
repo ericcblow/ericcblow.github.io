@@ -829,4 +829,9 @@ ow-container {
     flex-direction: column;
     align-items: center;
   }
+
+    /* Add spacing between dots and navigation buttons */
+    .dots-container {
+      margin-bottom: 15px; /* Adjust as needed */
+    }
 }
