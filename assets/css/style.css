@@ -761,7 +761,7 @@ ow-container {
   font-size: 16px;
   padding: 10px 15px;
   position: absolute;
-  bottom: 5%; /* Reduced from 15% to move it lower */
+  bottom: -15%; /* Reduced from 15% to move it lower */
   left: 50%;
   transform: translate(-50%, 50%); /* Moves it down by 50% of its own height */
   width: 60%;
