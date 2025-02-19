@@ -1,6 +1,7 @@
+# ecb: Make sure you change this to allow after website is ready.
 # Group 1
 User-agent: Googlebot
-Disallow: /nogooglebot/
+Allow: /
 
 # Group 2
 User-agent: *
